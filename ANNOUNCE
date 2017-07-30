@@ -1,0 +1,241 @@
+The Wine maintenance release 2.0.2 is now available.
+
+What's new in this release (see below for details):
+  - Various bug fixes
+
+The source is available from the following locations:
+
+  http://dl.winehq.org/wine/source/2.0/wine-2.0.2.tar.xz
+  http://mirrors.ibiblio.org/wine/source/2.0/wine-2.0.2.tar.xz
+
+Binary packages for various distributions will be available from:
+
+  http://www.winehq.org/download
+
+You will find documentation on http://www.winehq.org/documentation
+
+You can also get the current source directly from the git
+repository. Check http://www.winehq.org/git for details.
+
+Wine is available thanks to the work of many people. See the file
+AUTHORS in the distribution for the complete list.
+
+----------------------------------------------------------------
+
+Bugs fixed in 2.0.2 (total 62):
+
+   2624  In dialogs, an incorrect extra WM_ERASEBKGND is sent after WM_PAINT
+  10858  BlueByte Game Channel fails to install
+  14606  TreeView + right click doesn't work the way it does in native windows
+  20215  Extra mouse buttons do not work in Firefox
+  23302  Not standard background color in Wine configuration
+  25625  Implement PROPSHEET_InsertPage
+  30378  Xuzhou network client crashes at start
+  30764  regedit: a key created from right-click context menu is in incorrect position
+  33717  regedit: Sorting registry keys on refreshing
+  33987  Secret Files 3 demo shows only some parts of background in ConfigTool
+  35563  Custom game development library expects non-zero value for ProcessVmCounters info class member 'WorkingSetSize'
+  37404  A right click on a registry key does not select it
+  37976  Poedit 1.7.4 crashes on unimplemented function msvcr120.dll.??0_ReentrantBlockingLock@details@Concurrency@@QAE@XZ
+  39685  Multiple applications crash on startup, need unimplemented function msvcr120.dll.??0event@Concurrency@@QAE@XZ (Rollcage Redux v1.3.8, ARC client, Playstation Now)
+  39856  Regedit: Default registry key is not the same as on Windows
+  39895  MalwareBytes Anti-malware software needs msvcr100.dll.lldiv implementation
+  40629  Noto Nastaliq Urdu font crashes notepad during shaping
+  40798  ACDSee Pro 9 (64-bit) needs msvcr120.dll.??0event@Concurrency@@QEAA@XZ
+  40948  Multiple apps need api-ms-win-crt-locale-l1-1-0.dll.__initialize_lconv_for_unsigned_char
+  40956  unimplemented function msvcr110.dll._Lock_shared_ptr_spin_lock when starting Zoner Photo Studio 18
+  41408  Multiple applications crash on unimplemented function msvcp140.dll.??0task_continuation_context@Concurrency@@AAE@XZ
+  41472  kolotibablo needs ntoskrnl.exe.KeAcquireInStackQueuedSpinLock
+  41753  Steep (Ubisoft) needs iphlpapi.dll.GetUnicastIpAddressEntry
+  41928  Mortal Kombat X needs msvcr110.dll._get_dstbias
+  42017  Silence d3d11_immediate_context_OMSetBlendState  spam at console
+  42129  Steam client - unimplemented function mfreadwrite.dll.MFCreateSourceReaderFromMediaSource
+  42138  bug when running reaktor 6: "Unhandled exception: unimplemented function concrt140.dll.??0_ReentrantBlockingLock@details@Concurrency@@QAE@XZ called in 32-bit code (0x7b43bf1c)."
+  42206  Gauntlet character screen background is corrupted.
+  42209  Native Instruments Native Access 1.0.25 (R37) crashes on unimplemented function concrt140.dll.??1_ReentrantBlockingLock@details@Concurrency@@QAE@XZ
+  42239  Kontact 5.6 needs api-ms-win-crt-time-l1-1-0.dll._Wcsftime
+  42240  Kontact 5.6 needs concrt140.dll.??0_ReentrantBlockingLock@details@Concurrency@@QEAA@XZ
+  42271  Final Fantasy X needs msvcr110.dll.__crtUnhandledException
+  42449  Multiple apps need function msvcr120.dll.fesetround (0 A.D., BeamNG.drive)
+  42463  ZmLearn crash at startup: "Assertion 'm->state == STATE_PASSIVE' failed at pulse/mainloop.c:787, function pa_mainloop_prepare(). Aborting."
+  42465  winhttp set_cookies() violates RFC6265 string comparison rules
+  42487  Free Devanagari font Samanata crashes during GPOS processing
+  42490  Assertion failure when clicking boxes in altWinDirStat
+  42510  InternetOpenUrl does not send query parameters for HTTPS urls
+  42559  Adobe Reader DC: No longer installs (Unimplemented function msi.dll.MsiGetComponentPathExW)
+  42575  Multiple applications need msvcp140.dll.?_LogScheduleTask@_TaskEventLogger@details@Concurrency@@QAEX_N@Z
+  42576  Poedit crashes on start on unimplemented function msvcp140.dll.?_Reset@_ContextCallback@details@Concurrency@@AAEXXZ
+  42578  WSAStringToAddress fails to parse IP v6 addresses with port number
+  42626  unimplemented function msvcr110.dll.__crtUnhandledException
+  42651  ViStart: fails to install, needs ntoskrnl.exe.IoReportResourceForDetection
+  42655  Aliens vs. Predator (2010) needs d3dx11_42.dll.D3DX11FilterTexture
+  42657  ACDSee Pro 9 needs msvcr120.dll.?Alloc@Concurrency@@YAPEAX_K@Z
+  42658  Playstation Now needs msvcr120.dll.?Alloc@Concurrency@@YAPAXI@Z
+  42688  Native Acces crashes on unimplemented msvcp140.dll.?__ExceptionPtrCompare@@YA_NPBX0@Z
+  42703  Excel 2010 does not work: unimplemented function oleaut32.dll.GetAltMonthNames
+  42736  scanf doesn't work as expected when using format string contains non-ascii chars
+  42774  WinHttpQueryAuthSchemes fails to return the correct supported value for multiple WWW-Authenticate
+  42798  MsiGetPatchInfoEx returns incorrect values for UNINSTALLABLE, PATCHSTATE properties
+  42834  Steuer-Spar-Erklärung 2017 crashes with critical error
+  42876  iTunes needs function msvcp140.dll._Lock_shared_ptr_spin_lock
+  42986  wine can't be compiled by gcc-2.95.4 (amstream/mediastream.c)
+  42991  wine can't be compiled by gcc-2.95.4 (dmusic/port.c)
+  42992  wine can't be compiled by gcc-2.95.4 (dwrite/opentype.c)
+  42993  wine can't be compiled by gcc-2.95.4 (gdiplus/metafile.c)
+  42994  wine can't be compiled by gcc-2.95.4 (mscoree/assembly.c)
+  42995  wine can't be compiled by gcc-2.95.4 (netprofm/list.c)
+  43127  Multiple 64-bit applications crash with stack overflow errors when Wine is compiled with GCC 7.x (set_context_reg in ntdll/signal_x86_64.c assumes Xmm registers are aligned)
+  43315  Steam fails to start [After update Thu, 06 Jul 2017]
+
+----------------------------------------------------------------
+
+Changes since 2.0.1:
+
+Alex Henrie (8):
+      winecfg: Paint text on About tab with the right background color.
+      ntdll: Implement ProcessVmCounters for Linux.
+      user32: Translate WM_(NC)XBUTTONUP to WM_APPCOMMAND in DefWindowProc.
+      comctl32: Return TRUE from LVM_REDRAWITEMS with bad indices.
+      ddraw: Don't crash if writing out a new ddraw2 surface segfaults.
+      ddraw: Don't crash if writing out a new ddraw4 surface segfaults.
+      ddraw: Don't crash if writing out a new ddraw7 surface segfaults.
+      ddraw: Validate the "surface" pointer before creating the surface in CreateSurface().
+
+Alistair Leslie-Hughes (3):
+      winhttp/tests: Added multi Authenticate header test.
+      include: Add mfreadwrite.idl.
+      mfreadwrite: Add MFCreateSourceReaderFromMediaSource stub.
+
+Andrey Gusev (1):
+      d3dx11: Add D3DX11FilterTexture stub.
+
+André Hentschel (4):
+      include: Add the new version of the IP_ADAPTER_UNICAST_ADDRESS structure.
+      iphlpapi: Add GetUnicastIpAddressEntry implementation.
+      hidclass.sys: Fix compilation on systems that don't support nameless structs.
+      winebus.sys: Fix compilation on systems that don't support nameless structs.
+
+Aric Stewart (1):
+      usp10: Fix Contextual Shaping for Languages with RTL write order.
+
+Austin English (2):
+      ntoskrnl.exe: Add KeAcquireInStackQueuedSpinLock stub.
+      ntoskrnl.exe: Add IoReportResourceForDetection stub.
+
+Björn Bidar (1):
+      wined3d: Add NVIDIA GTX 1080 Ti to the GPU list.
+
+Bruno Jesus (3):
+      ws2_32/tests: Rework WSAStringToAddress tests.
+      ws2_32: Fix WSAStringToAddress parsing for IPv6.
+      ws2_32: Turn SIO_GET_EXTENSION_FUNCTION_POINTER into a table.
+
+Christopher Berner (1):
+      wined3d: Add Nvidia TitanX (Pascal).
+
+Daniel Lehman (1):
+      msvcrt: Add Concurrency::event stubs.
+
+Fabian Maurer (5):
+      user32/tests: Add tests for windows when first shown with WS_VISIBLE or RedrawWindow.
+      user32/tests: Add tests for windows when first shown with SetWindowPos.
+      user32/tests: Add tests for windows when first shown if they have children.
+      user32/tests: Add WM_NCPAINT tests for windows crossing screen or maximized.
+      user32: Send WM_NCPAINT and WM_ERASEBKGND when window is shown.
+
+Gijs Vermeulen (1):
+      msvcrt: Add stub for Concurrency::Alloc.
+
+Hans Leidekker (7):
+      msi: Implement MsiGetComponentPathExA/W.
+      winhttp: Parse cookie attributes.
+      winhttp: Cookie attributes are case-insensitive.
+      winhttp: Ignore unknown schemes in WinHttpQueryAuthSchemes.
+      msi: Properly handle DWORD registry values in MsiGetPatchInfoEx.
+      netprofm: Fix compilation on systems that don't support nameless unions.
+      winhttp: Fix a memory leak in insert_header (Valgrind).
+
+Hugh McMaster (4):
+      comctl32: Improve right-click handling in treeview controls.
+      regedit: Call TrackPopupMenu() from WM_CONTEXTMENU.
+      regedit: Select the targeted treeview item on right mouse click.
+      regedit: Sort treeview children on refresh.
+
+Huw D. M. Davies (1):
+      shell32: Avoid leaking icon handles.
+
+Jacek Caban (1):
+      msvcrt: Added lldiv implementation.
+
+Jakub Bartmiński (1):
+      regedit: Fall back to tree root on invalid path.
+
+Józef Kucia (11):
+      d3d11: Try to avoid spurious blend state FIXMEs().
+      wined3d: Add ARB_texture_buffer_object extension.
+      wined3d: Create dummy buffer textures.
+      wined3d: Add initial support for shader buffer views.
+      wined3d: Do not pass LOD to texelFetch() for buffer resources.
+      wined3d: Implement buffer samplers.
+      amstream: Fix compilation on systems that don't support nameless unions.
+      dmusic: Fix compilation on systems that don't support nameless structs or unions.
+      mscoree: Fix compilation on systems that don't support nameless unions.
+      gdiplus: Fix compilation on systems that don't support nameless unions.
+      dxgi: Fix HMODULE leak in register_d3d10core_layers().
+
+Kimmo Myllyvirta (1):
+      ws2_32: Set return size when calling WSAIoctl with WS_SIO_GET_EXTENSION_FUNCTION_POINTER.
+
+Michael Müller (2):
+      cabinet: Set index of folder in FDICopy callback.
+      wininet: Handle query parameters for HTTPS urls in InternetOpenUrlW.
+
+Michael Stefaniuc (1):
+      dmloader: Avoid a crash on a NULL string pointer.
+
+Nikolay Sivov (8):
+      oleaut32: Implement GetAltMonthNames().
+      dwrite: Make CreateFontFaceFromHdc() properly fail on unsupported font format.
+      regedit: Sort each of top level branches separately.
+      usp10: Ignore device tables with invalid delta format.
+      dwrite: Fix compilation failure regarding nameless unions.
+      schedsvc: Fix xml buffer leak (Valgrind).
+      dwrite: Fix file object leak.
+      shell32: Fix string leak.
+
+Peter Hater (1):
+      comctl32/propsheet: Added PSM_INSERTPAGE implementation.
+
+Piotr Caban (16):
+      msvcp110: Add _Lock_shared_ptr_spin_lock implementation.
+      msvcp140: Add task_continuation_context constructor implementation.
+      msvcp140: Add _ContextCallback implementation.
+      msvcp140: Add _TaskEventLogger class implementation.
+      msvcr: Add _Wcsftime implementation.
+      msvcr100: Add reader_writer_lock class stub.
+      msvcr100: Add _ReentrantBlockingLock class implementation.
+      msvcrt: Add __ExceptionPtrCopyException implementation.
+      msvcrt: Add __ExceptionPtrCompare implementation.
+      msvcr: Add __crtUnhandledException implementation.
+      msvcr120: Add fesetround implementation.
+      msvcrt: Fix handling of unsigned chars in scanf format.
+      msvcrt: Fix wide characters handling in wscanf functions.
+      msvcr: Add _get_dstbias implementation.
+      ucrtbase: Add __initialize_lconv_for_unsigned_char implementation.
+      msvcr110: Add _Lock_shared_ptr_spin_lock implementation.
+
+Sebastian Lackner (3):
+      rasapi32: Set *lpcDevices in RasEnumDevicesA.
+      ntdll: Do not cast unaligned pointer to M128A in set_context_reg.
+      mmdevapi: Use InitOnce to initialize audio drivers.
+
+Thierry Vermeylen (1):
+      wnaspi32: Do not crash on SC_GETSET_TIMEOUTS.
+
+Viktor Semykin (2):
+      windowscodecs/tests: Test for png codec seeking too far.
+      windowscodecs: Fixed loading png from streams.
+
+--
+Michael Stefaniuc
+mstefani@winehq.org
